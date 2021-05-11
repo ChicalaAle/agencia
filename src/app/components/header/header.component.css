@@ -1,0 +1,34 @@
+.point-trace{
+    position: absolute;
+    opacity: .5;
+    width: 25px;
+}
+
+:root{
+    --point1Bottom: 80px;
+    --point1Left: 60px;
+}
+
+#point1{
+    bottom: var(--point1Bottom);
+    left: var(--point1Left);
+    animation: point1 10s ease-in infinite;
+    transition: all .3s ease;
+}
+
+@keyframes point1 {
+    0% {
+        bottom: var(--point1Bottom);
+        left: var(--point1Left); 
+    }
+
+    90%{
+        bottom: 1000px;
+        left: 1000px;
+    }
+
+    100%{
+        bottom: 1000px;
+        left: 1000px;
+    }
+}
