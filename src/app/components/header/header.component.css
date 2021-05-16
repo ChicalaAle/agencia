@@ -4,19 +4,82 @@
     width: 25px;
 }
 
+
+.point{
+    position: absolute;
+    opacity: 1;
+    width: 15px;
+}
+
 :root{
     --point1Bottom: 80px;
     --point1Left: 60px;
 }
 
-#point1{
-    bottom: var(--point1Bottom);
-    left: var(--point1Left);
-    animation: point1 10s ease-in infinite;
+/*POINTS*/
+
+.point, .point-trace{
     transition: all .3s ease;
 }
 
-@keyframes point1 {
+@media(max-width: 992px){
+    .point, .point-trace{
+       display: none;
+    }
+}
+
+#point1{
+    bottom: 7%;
+    left: 380px;
+    animation: destello 2s linear infinite;
+}
+
+#point2{
+    bottom: 40px;
+    left: 600px;
+    animation: destello 2s linear infinite;
+    animation-delay: 1s;
+}
+
+#point3{
+    bottom: 48%;
+    left: 340px;
+    animation: destello 4s linear infinite;
+}
+
+#point4{
+    top: 15%;
+    left: 35%;
+    animation: destello 2s linear infinite;
+    animation-delay: .5s;
+}
+
+@keyframes destello {
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    50%{
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100%{
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+
+/*POINT TRACE*/
+
+#point-trace1{
+    bottom: var(--point1Bottom);
+    left: var(--point1Left);
+    animation: point-trace 10s ease-in infinite;
+}
+
+@keyframes point-trace {
     0% {
         bottom: var(--point1Bottom);
         left: var(--point1Left); 
