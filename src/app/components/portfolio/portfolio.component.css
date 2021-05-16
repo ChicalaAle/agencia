@@ -1,0 +1,23 @@
+.web-jobs div{
+    transition: all .1s ease;
+}
+
+.web-jobs div:hover{
+    transform: scale(1.1);
+    animation: glow 3s linear infinite;
+    z-index: 1;
+}
+
+@keyframes glow {
+    0%{        
+        box-shadow: 0px 0px 2px rgb(0, 255, 157);
+    }
+
+    50% {
+        box-shadow: 0px 0px 20px rgb(255, 255, 255);
+    }
+
+    100%{
+        box-shadow: 0px 0px 2px rgb(0, 255, 157);
+    }
+}

@@ -13,7 +13,7 @@ export class ClientsComponent implements OnInit {
   ngOnInit(): void {
     var imageSlider = new Swiper('.image-slider', {
       autoplay: {
-          delay: 2000,
+          delay: 800,
           disableOnInteraction: false
   },
       loop: true,
