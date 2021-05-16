@@ -28,6 +28,7 @@
               "node_modules/animate.css/animate.min.css",
               "node_modules/morphext/dist/morphext.css",
               "node_modules/swiper/swiper-bundle.css",
+              "node_modules/magnific-popup/dist/magnific-popup.css",
               "src/styles.css"
               
             ],
@@ -36,6 +37,7 @@
               "node_modules/bootstrap/dist/js/bootstrap.min.js",
               "node_modules/morphext/dist/morphext.js",
               "node_modules/swiper/swiper-bundle.js",
+              "node_modules/magnific-popup/dist/jquery.magnific-popup.min.js",
               "src/scripts/navbar/navbar.js"
             ]
           },

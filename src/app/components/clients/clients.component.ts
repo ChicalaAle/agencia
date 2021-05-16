@@ -25,7 +25,7 @@ export class ClientsComponent implements OnInit {
       slidesPerView: 5,
   breakpoints: {
           // when window is <= 380px
-          380: {
+          350: {
               slidesPerView: 2,
               spaceBetween: 10
           },
