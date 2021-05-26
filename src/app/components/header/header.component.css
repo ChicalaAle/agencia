@@ -76,7 +76,7 @@
 #point-trace1{
     bottom: var(--point1Bottom);
     left: var(--point1Left);
-    animation: point-trace 10s ease-in infinite;
+    /* animation: point-trace 10s ease-in infinite; */
 }
 
 @keyframes point-trace {
@@ -94,4 +94,13 @@
         bottom: 1000px;
         left: 1000px;
     }
+}
+
+.tilt-3d-dad{
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+}
+
+.tilt-3d-child{
+    
 }
