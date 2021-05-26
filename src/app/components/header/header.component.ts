@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import VanillaTilt from 'vanilla-tilt';
+
 declare var $:any;
 @Component({
   selector: 'app-header',
@@ -11,6 +13,16 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
     this.morphext();
+
+    let div:HTMLElement = document.querySelector('#til');
+
+    VanillaTilt.init(div, {
+      max: 25,
+      speed: 100,
+      reset:false,
+      reverse: true
+    });
+
   }
 
   morphext(){
